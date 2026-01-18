@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Configure DbContext with PostgreSQL/PostGIS
-builder.Services.AddDbContext<GeoTrackDbContext>(options =>
+builder.Services.AddPooledDbContextFactory<GeoTrackDbContext>(options =>
 {
     options.UseNpgsql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
@@ -14,6 +14,17 @@ builder.Services.AddDbContext<GeoTrackDbContext>(options =>
         {
             npgsqlOptions.UseNetTopologySuite();
             npgsqlOptions.MigrationsAssembly("GeoTrack.Api");
+        });
+});
+
+// Also register DbContext for non-GraphQL use (services, etc.)
+builder.Services.AddDbContext<GeoTrackDbContext>(options =>
+{
+    options.UseNpgsql(
+        builder.Configuration.GetConnectionString("DefaultConnection"),
+        npgsqlOptions =>
+        {
+            npgsqlOptions.UseNetTopologySuite();
         });
 });
 

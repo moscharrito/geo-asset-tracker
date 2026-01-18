@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  # PostgreSQL with PostGIS extension
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: geotrack-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: geotrack
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d geotrack"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - geotrack-network
+
+  # .NET Backend API
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: geotrack-api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Host=postgres;Port=5432;Database=geotrack;Username=postgres;Password=postgres
+    ports:
+      - "5000:5000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    networks:
+      - geotrack-network
+
+  # React Frontend
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: geotrack-frontend
+    environment:
+      - VITE_GRAPHQL_HTTP_URL=http://localhost:5000/graphql
+      - VITE_GRAPHQL_WS_URL=ws://localhost:5000/graphql
+    ports:
+      - "5173:5173"
+    depends_on:
+      - api
+    networks:
+      - geotrack-network
+
+volumes:
+  postgres_data:
+
+networks:
+  geotrack-network:
+    driver: bridge

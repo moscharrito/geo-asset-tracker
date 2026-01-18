@@ -1,0 +1,32 @@
+version: '3.8'
+
+# Development compose file - run with: docker-compose -f docker-compose.dev.yml up
+
+services:
+  # PostgreSQL with PostGIS extension
+  postgres:
+    image: postgis/postgis:16-3.4
+    container_name: geotrack-postgres-dev
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: geotrack
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data_dev:/var/lib/postgresql/data
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d geotrack"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks:
+      - geotrack-network-dev
+
+volumes:
+  postgres_data_dev:
+
+networks:
+  geotrack-network-dev:
+    driver: bridge

@@ -39,17 +39,14 @@ services:
     networks:
       - geotrack-network
 
-  # React Frontend
+  # React Frontend (production build)
   frontend:
     build:
       context: ./frontend
       dockerfile: Dockerfile
     container_name: geotrack-frontend
-    environment:
-      - VITE_GRAPHQL_HTTP_URL=http://localhost:5000/graphql
-      - VITE_GRAPHQL_WS_URL=ws://localhost:5000/graphql
     ports:
-      - "5173:5173"
+      - "3000:80"
     depends_on:
       - api
     networks:

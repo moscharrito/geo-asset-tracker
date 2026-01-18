@@ -51,7 +51,7 @@ builder.Services
     .AddFiltering()
     .AddSorting()
     .AddInMemorySubscriptions()
-    .RegisterDbContext<GeoTrackDbContext>()
+    .RegisterDbContextFactory<GeoTrackDbContext>()
     .ModifyRequestOptions(opt => opt.IncludeExceptionDetails = builder.Environment.IsDevelopment());
 
 var app = builder.Build();

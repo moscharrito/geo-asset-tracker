@@ -1,0 +1,9 @@
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\GeoTrack.Api.csproj.AssemblyReference.cache
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\rpswa.dswa.cache.json
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\GeoTrack.Api.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\GeoTrack.Api.AssemblyInfoInputs.cache
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\GeoTrack.Api.AssemblyInfo.cs
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\GeoTrack.Api.csproj.CoreCompileInputs.cache
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\GeoTrack.Api.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\EFCoreNpgsqlNetTopologySuite.cs
+C:\Users\mosch\Downloads\Apps-Archive\Geotrack-Dashboard\backend\GeoTrack.Api\obj\Debug\net8.0\GeoTrack.Api.sourcelink.json

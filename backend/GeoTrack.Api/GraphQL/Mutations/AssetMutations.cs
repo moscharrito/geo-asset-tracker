@@ -1,7 +1,7 @@
 using GeoTrack.Api.Data;
+using GeoTrack.Api.GraphQL.Subscriptions;
 using GeoTrack.Api.GraphQL.Types;
 using GeoTrack.Api.Models;
-using GeoTrack.Api.Services;
 using HotChocolate.Subscriptions;
 using Microsoft.EntityFrameworkCore;
 using NetTopologySuite.Geometries;

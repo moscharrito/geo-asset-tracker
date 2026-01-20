@@ -1,6 +1,7 @@
 import { memo } from 'react';
 import { Asset, AssetMarkerProps } from '../../types/Asset';
 
+// Define colors for different asset statuses
 const statusColors: Record<string, string> = {
   ACTIVE: '#22c55e',
   INACTIVE: '#6b7280',
@@ -8,6 +9,7 @@ const statusColors: Record<string, string> = {
   RETIRED: '#ef4444',
 };
 
+// Define icons for different asset types
 const assetTypeIcons: Record<string, string> = {
   Vehicle: '🚗',
   Equipment: '🔧',

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeoTrack.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22b6e3d80d4c6e30ade6f77c611bdab6d147a0ef")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+46b74fc0f0ed961cda1d1a513b7c4b0bf7995d21")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeoTrack.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeoTrack.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

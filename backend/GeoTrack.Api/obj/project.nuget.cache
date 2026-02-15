@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G9Uumu3of5U=",
+  "dgSpecHash": "e5f5x7+VZjo=",
   "success": true,
-  "projectFilePath": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\backend\\GeoTrack.Api\\GeoTrack.Api.csproj",
+  "projectFilePath": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\Backend\\GeoTrack.Api\\GeoTrack.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mosch\\.nuget\\packages\\chillicream.nitro.app\\20.0.2\\chillicream.nitro.app.20.0.2.nupkg.sha512",
     "C:\\Users\\mosch\\.nuget\\packages\\greendonut\\14.3.0\\greendonut.14.3.0.nupkg.sha512",

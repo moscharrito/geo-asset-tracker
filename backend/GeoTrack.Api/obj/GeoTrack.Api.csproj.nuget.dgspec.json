@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\Backend\\GeoTrack.Api\\GeoTrack.Api.csproj": {}
+    "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\backend\\GeoTrack.Api\\GeoTrack.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\Backend\\GeoTrack.Api\\GeoTrack.Api.csproj": {
+    "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\backend\\GeoTrack.Api\\GeoTrack.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\Backend\\GeoTrack.Api\\GeoTrack.Api.csproj",
+        "projectUniqueName": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\backend\\GeoTrack.Api\\GeoTrack.Api.csproj",
         "projectName": "GeoTrack.Api",
-        "projectPath": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\Backend\\GeoTrack.Api\\GeoTrack.Api.csproj",
+        "projectPath": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\backend\\GeoTrack.Api\\GeoTrack.Api.csproj",
         "packagesPath": "C:\\Users\\mosch\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\Backend\\GeoTrack.Api\\obj\\",
+        "outputPath": "C:\\Users\\mosch\\Downloads\\Apps-Archive\\Geotrack-Dashboard\\backend\\GeoTrack.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mosch\\AppData\\Roaming\\NuGet\\NuGet.Config"

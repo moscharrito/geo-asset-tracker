@@ -35,7 +35,6 @@ public class AssetService : IAssetService
             .OrderBy(a => a.Location.Distance(point))
             .ToListAsync(cancellationToken);
     }
-
     public async Task<IEnumerable<Asset>> GetAssetsWithinPolygonAsync(
         Polygon polygon,
         CancellationToken cancellationToken = default)
